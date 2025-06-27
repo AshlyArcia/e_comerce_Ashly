@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iFood Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">iFood</div>
+    <div class="controls">
+      <input type="text" id="search" placeholder="Buscar restaurantes...">
+      <button onclick="toggleDarkMode()">🌙</button>
+      <button onclick="openLoginModal()">Entrar</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Peça sua comida favorita</h1>
+      <p>Entregamos rápido e com qualidade na porta da sua casa.</p>
+      <a href="#" class="btn">Ver Restaurantes</a>
+    </div>
+  </section>
+
+  <section class="destaques">
+    <h2>Destaques de Hoje</h2>
+    <div class="card-container" id="produtos"></div>
+  </section>
+
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeLoginModal()">&times;</span>
+      <h2>Login</h2>
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Senha">
+      <button>Entrar</button>
+    </div>
+  </div>
+  <section class="categorias">
+  <h2>Categorias</h2>
+  <div class="categorias-container">
+    <div class="cat">🍕 Pizza</div>
+    <div class="cat">🍔 Hambúrguer</div>
+    <div class="cat">🥗 Salada</div>
+    <div class="cat">🍣 Sushi</div>
+    <div class="cat">🍰 Sobremesa</div>
+  </div>
+</section>  
+<section class="avaliacoes">
+  <h2>Avaliações de Clientes</h2>
+  <div class="avaliacoes-container">
+    <div class="avaliacao">
+      <p>"Comida maravilhosa e entrega super rápida!"</p>
+      <span>⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="avaliacao">
+      <p>"Tudo quentinho, recomendo demais!"</p>
+      <span>⭐⭐⭐⭐</span>
+    </div>
+    <div class="avaliacao">
+      <p>"Bom atendimento e pratos saborosos."</p>
+      <span>⭐⭐⭐⭐⭐</span>
+    </div>
+  </div>
+</section>
+<button id="carrinho-fixo">🛒 Carrinho (0)</button>
+
+  <footer>
+    <p>&copy; 2025 iFood Clone. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
